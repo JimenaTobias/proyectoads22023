@@ -134,7 +134,7 @@
   <data name="btn_fin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAy
-        uAAAMrgBKPMmiQAAAdtJREFUOE91lD9IQlEUxn3+JyVRyeGtDhq0iJOgGG1tTtIoLrYLRnNrOImuLbnp
+        twAAMrcBXj2IkwAAAdtJREFUOE91lD9IQlEUxn3+JyVRyeGtDhq0iJOgGG1tTtIoLrYLRnNrOImuLbnp
         VjRKQ7TZ7FJOZUPYJGW80/cdevJS34HfQ+6777vnnvMdPY7wgj1wCC7AI/gE3+AV3IFTcAB2gAH+RQgc
         gWvwBiwgW/gCT+AcmGAlxAwo8AC4advHTnjAOzgDu0CDV+gDFQiHwwp/OzEMQyKRiPh8PlvoBRwDJqE1
         4BXE7/dLvV6XTqcj+XxeP+Q6iUaj0mq1JJvN2usUugcJoEXUGjCDbrcry+VSxuOxVCoVCYVCKpJIJGQ4
@@ -172,7 +172,7 @@
   <data name="btn_inicio.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAy
-        uAAAMrgBKPMmiQAAAdZJREFUOE99lL9LAmEYx/190JCYuBxuuqS3ODYE4aCm4ByIjtJ/EM2NNio4BlKg
+        twAAMrcBXj2IkwAAAdZJREFUOE99lL9LAmEYx/190JCYuBxuuqS3ODYE4aCm4ByIjtJ/EM2NNio4BlKg
         e9HcEI1tgg61FSFJY6X39P0+5HEXdz3wOeR473PvPe/3MeSqCMiAA3AGHsAH+AIv4BYcAwtsgTDwlAHK
         4BK8AhuID5/gEZwCEzgi7oCCe8BFfg+74QvewAnYBlr8hCugAsMwJBqN+j0s4XBYwW+KnsEh4Ca0B/wE
         icfj0ul0xLKszWIHypvNpmQymc09iu7ADtAmag+4sN/vS6VScSTcVTableFwKLPZTAqFgiMGK3AE9BT0
@@ -186,7 +186,7 @@
   <data name="btn_refrescar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAy
-        uAAAMrgBKPMmiQAAAoVJREFUSEutlk1rWlEQhv2i2kLAhRvjH2hLNsnCYAsKCi7cGHRR9IeU/hEXmqza
+        twAAMrcBXj2IkwAAAoVJREFUSEutlk1rWlEQhv2i2kLAhRvjH2hLNsnCYAsKCi7cGHRR9IeU/hEXmqza
         rgRXgqCuRFcqEUJrV0kgBIRWaFHRheh03iH3cj+OX01feBDvzJm555w5c65jh14yH5jPzHdmxqyffocM
         nsMOv4P1gvnI/GJoD+AHfy+zl14zN4wq2C4w7g2zVe+Y34wqwL5gfIRRCjN4bgINxEE8k7CWyiVyOp10
         cXFBlUqFHh8faT6f02g0omq1Srlcjtxut/j5fD7rWMQz7RE2zepEoVCI2u02aZpOp3R3d0eTyeTpCdH1
@@ -203,7 +203,7 @@
   <data name="btn_imprimir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAy
-        uAAAMrgBKPMmiQAAAiVJREFUSEutlrGKWkEUhrVakicQ7BTEWNjvplEQwcoy2UotRO2ssnkLLXyCdZ9A
+        twAAMrcBXj2IkwAAAiVJREFUSEutlrGKWkEUhrVakicQ7BTEWNjvplEQwcoy2UotRO2ssnkLLXyCdZ9A
         sBZ7q5DsbmEjYmGiJMWqCOLZ8x/uDHO9c/Vq/OHjesc553dmzswYOqEPzBfmkfnFvDF75/nMoP0rg35n
         64b5xvxhKADoh/6IC6RPzA/GluwUiEP8Ud0xfxlbgqAg/paxCr/AZRCJRKjb7fpSKpXM5CbI4xkR5tIz
         RYlEgo5pv99TvV53xRggn2uNHhhPx1Mm0Gq18sQZoBhEKD9rFV3B5Dcj5Y06t3WgWCxGs9nsKOPx2Bpr

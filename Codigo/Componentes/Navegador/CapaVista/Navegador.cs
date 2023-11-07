@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Seguridad_Controlador;
+using System.Security.Cryptography;
+using System.Runtime.CompilerServices;
 
 namespace CapaVista
 {
@@ -21,14 +24,50 @@ namespace CapaVista
         string tabla_cmb = "";
         DataGridView data_invisible = new DataGridView();
         public DataTable mydata = new DataTable();
-
+        public Seguridad_Controlador.Controlador ctrl_seguridad = new Controlador();
         public Form parent;
+        public string idApp;
         public Navegador()
         {
             InitializeComponent();
             this.parent = new Form();
             this.utilConsultasI = new utilidadesConsultasI();
             this.cambiarEstado(false);
+            //string encriptado = this.SetHash("12345");
+            //bool login = ctrl_seguridad.validarLogin("admin", encriptado);
+            //ctrl_seguridad.setBtitacora("7003", "actualizando");
+            //ctrl_seguridad.setBtitacora("1000", "actualizando");
+            //MessageBox.Show("Realizando bitacora");
+            this.loadButtons();
+        }
+
+        public void loadButtons()
+        {
+            int[] arr = this.ctrl_seguridad.getPermisosAplicaion(idApp);
+            foreach (Control c in this.panel.Controls)
+            {
+                if (c is Button)
+                {
+                    Button mybutton = (Button)c;
+                    if (mybutton.Tag == null || mybutton.Tag.Equals("")) continue;
+                    int index = Convert.ToInt32(mybutton.Tag) - 1;
+                    mybutton.Enabled = !Convert.ToBoolean(arr[index]);
+                }
+            }
+        }
+
+
+        public string SetHash(string inputString)
+        {
+            string hash = "x2";
+            byte[] bytes = UTF8Encoding.UTF8.GetBytes(inputString);
+            MD5 mD5 = MD5.Create();
+            TripleDES tripleDES = TripleDES.Create();
+            tripleDES.Key = mD5.ComputeHash(UTF8Encoding.UTF8.GetBytes(hash));
+            tripleDES.Mode = CipherMode.ECB;
+            ICryptoTransform transform = tripleDES.CreateEncryptor();
+            byte[] output = transform.TransformFinalBlock(bytes, 0, bytes.Length);
+            return Convert.ToBase64String(output);
         }
 
         public void fillCombo()
@@ -106,14 +145,25 @@ namespace CapaVista
         {
             DataGridView dgvname = GetDGV(child);
 
-            if (operacion.Equals("g")) this.utilConsultasI.guardar(child);
-            if (operacion.Equals("m")) this.utilConsultasI.modificar(child);
+            if (operacion.Equals("g"))
+            {
+                this.ctrl_seguridad.setBtitacora(idApp, "Se ha guardado un registro");
+                this.utilConsultasI.guardar(child);
+            }
+            if (operacion.Equals("m"))
+            {
+                this.ctrl_seguridad.setBtitacora(idApp, "Se ha modificado un registro");
+                this.utilConsultasI.modificar(child);
+            }
             if (operacion.Equals("r"))
             {
                 this.utilConsultasI.refrescar(child);
-                this.fillCombo();
             }
-            if (operacion.Equals("e")) this.utilConsultasI.eliminar(child, dgvname);
+            if (operacion.Equals("e"))
+            {
+                this.utilConsultasI.eliminar(child, dgvname);
+                this.ctrl_seguridad.setBtitacora(idApp, "Se ha eliminado un registro");
+            }
         }
         public DataGridView GetDGV(Form child)
         {

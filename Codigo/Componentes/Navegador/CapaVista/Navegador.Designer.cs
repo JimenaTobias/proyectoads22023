@@ -174,6 +174,7 @@
             this.btn_imprimir.Name = "btn_imprimir";
             this.btn_imprimir.Size = new System.Drawing.Size(69, 55);
             this.btn_imprimir.TabIndex = 6;
+            this.btn_imprimir.Tag = "5";
             this.btn_imprimir.Text = "Imprimir";
             this.btn_imprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_imprimir.UseVisualStyleBackColor = false;
@@ -190,6 +191,7 @@
             this.btn_eliminar.Name = "btn_eliminar";
             this.btn_eliminar.Size = new System.Drawing.Size(69, 55);
             this.btn_eliminar.TabIndex = 5;
+            this.btn_eliminar.Tag = "3";
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_eliminar.UseVisualStyleBackColor = false;
@@ -207,6 +209,7 @@
             this.btn_consultar.Name = "btn_consultar";
             this.btn_consultar.Size = new System.Drawing.Size(69, 55);
             this.btn_consultar.TabIndex = 4;
+            this.btn_consultar.Tag = "4";
             this.btn_consultar.Text = "Consultar";
             this.btn_consultar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_consultar.UseVisualStyleBackColor = false;
@@ -223,6 +226,7 @@
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(69, 55);
             this.btn_cancelar.TabIndex = 3;
+            this.btn_cancelar.Tag = "2";
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_cancelar.UseVisualStyleBackColor = false;
@@ -240,6 +244,7 @@
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(69, 55);
             this.btn_guardar.TabIndex = 2;
+            this.btn_guardar.Tag = "";
             this.btn_guardar.Text = "Guardar";
             this.btn_guardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_guardar.UseVisualStyleBackColor = false;
@@ -257,6 +262,7 @@
             this.btn_modificar.Name = "btn_modificar";
             this.btn_modificar.Size = new System.Drawing.Size(69, 55);
             this.btn_modificar.TabIndex = 1;
+            this.btn_modificar.Tag = "2";
             this.btn_modificar.Text = "Modificar";
             this.btn_modificar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_modificar.UseVisualStyleBackColor = false;
@@ -274,6 +280,7 @@
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(69, 55);
             this.btn_agregar.TabIndex = 0;
+            this.btn_agregar.Tag = "1";
             this.btn_agregar.Text = "Agregar";
             this.btn_agregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_agregar.UseVisualStyleBackColor = false;
